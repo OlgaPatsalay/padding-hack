@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+}
+div {
+    display: inline-block;
+    font-size: 0;
+}
+.small-field div {
+    width: 12.5%;
+    height: 12.5%;
+    background-color: black;
+}
+.small-field {
+    width: 96%;
+    height: 96%;
+    outline: 2px solid black;
+    position: absolute;
+    left: 2%; /*что бы была рамка вокруг поля  (100%-96%)/2=2% */
+    top: 2%;
+}
+.big-field {
+    background-image: url("wood_pattern.png");
+    width: 100%;
+    max-width: 640px;
+    position: relative;
+}
+.big-field:before {
+    content:'';
+    display: block;
+    padding-bottom: 100%;
+}
+.margin-right {
+    margin-right: 12.5%;
+}
+.margin-left {
+    margin-left: 12.5%;
+}
+.checker-red {
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    background-color: #BF232F;
+    border-radius: 50%;
+}
+.checker-black {
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    background-color: #585555;
+    border-radius: 50%;
+}
